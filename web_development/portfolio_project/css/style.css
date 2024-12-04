@@ -454,7 +454,62 @@ pre {
   letter-spacing: 7px;
   transform-origin: right center;
 
+
 }
+/* SERVICES */
+/* General Container Styling */
+/* .container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #1b1b1b; /* Dark background for the section *
+  color: #fff; /* White text for contrast *
+} */
+
+/* Services Section */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Space between service cards */
+  text-align: center; /* Center align content */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); 
+}
+
+/* Individual Service Card */
+.service {
+  background-color: #2b2b2b; /* Slightly lighter dark for contrast */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+}
+
+/* Icon Styling */
+.icon {
+  font-size: 40px; /* Larger icon size */
+  margin-bottom: 10px;
+  color: #84a0c6; /* Soft blue for icons */
+}
+
+/* Service Title */
+.service h2 {
+  font-size: 22px;
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+/* Service Description */
+.service p {
+  font-size: 14px;
+  color: #cccccc; /* Lighter gray for text */
+  line-height: 1.6;
+}
+
 /* EXPERIENCE  */
 
 .experience-container {
@@ -543,6 +598,53 @@ pre {
   transform: scale(1.1);
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+/* projects */
+/* Projects Grid */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+  gap: 20px; /* Space between project cards */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); 
+}
+
+/* Individual Project Cards */
+.project {
+  background-color: #2b2b2b; /* Card background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for cards */
+  overflow: hidden;
+  text-align: left; /* Align content to the left */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Deeper shadow on hover */
+}
+
+/* Project Image Styling */
+.project .image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-bottom: 5px solid #ff007f; /* Accent color */
+}
+
+/* Project Title */
+.project h2 {
+  font-size: 20px;
+  margin: 15px 15px 10px;
+  color: #ffffff;
+}
+
+/* Project Description */
+.project p {
+  font-size: 14px;
+  margin: 0 15px 20px;
+  color: #cccccc; /* Subtle text color */
+  line-height: 1.6;
 }
 /* skills  */
 
@@ -617,11 +719,19 @@ img:hover{
 /* Contact Container */
 .contact-container {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 20px;
 }
 
-.contact-form,
+.contact-form {
+  background-color: #2b2b2b;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 7;
+  min-width: 300px;
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(62, 187, 12, 0.1);
+}
 .contact-address {
   background-color: #2b2b2b;
   padding: 20px;
@@ -666,15 +776,21 @@ label {
 /* Input and Textarea Styling */
 input,
 textarea {
-  width: 100%;
-  padding: 10px;
-  font-size: 14px;
-  color: #fff;
-  background-color: #2b2b2b;
-  border: 1px solid #444;
-  border-radius: 5px;
-  outline: none;
-  transition: border-color 0.3s ease;
+    --tw-border-opacity: 1;
+    --tw-bg-opacity: 1;
+    --tw-text-opacity: 1;
+    background-color: rgb(25 27 30 / var(--tw-bg-opacity));
+    border-bottom-color: rgb(75 85 99 / var(--tw-border-opacity));
+    border-bottom-width: 1px;
+    border-radius: .5rem;
+    color: rgb(196 207 222 / var(--tw-text-opacity));
+    height: 3rem;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    transition-duration: .3s;
+    width: 100%;
 }
 
 input:focus,
@@ -693,6 +809,88 @@ textarea {
     flex-direction: column; /* Stack fields vertically on smaller screens */
   }
 }
+.contact-address{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-address h3, h4{
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-align: center; 
+}
+.contact-address p{
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.img-contaner{
+  background-color: #2b2b2b;
+ 
+  border-radius: 8px;
+  flex: 7;
+  /* min-width: 300px; */
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(77, 151, 48, 0.1);
+}
+li{
+  list-style: none;
+}
+/* Container for Social Buttons */
+.social-buttons {
+  display: flex;
+  gap: 10px; /* Spacing between buttons */
+}
+
+/* Social Icons Styling */
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px; /* Square size */
+  height: 50px;
+  background-color: #2b2b2b; /* Dark background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: #fff; /* Icon color */
+  font-size: 20px; /* Icon size */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Hover Effects */
+.social-icon:hover {
+  transform: scale(1.1); /* Slight zoom */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4); /* Enhanced shadow */
+}
+
+/* Specific Colors for Each Icon */
+.social-icon.facebook {
+    background: linear-gradient(
+      45deg,
+      #0a0a80,
+      #2307c4,
+      #d14f03,
+      #015201,
+      #155a03
+    );
+  
+    -webkit-background-clip: text;
+    /* Ensures background clips to text  */
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+.social-icon.twitter {
+  color: #1da1f2; /* Twitter blue */
+}
+
+.social-icon.linkedin {
+  color: #0077b5; /* LinkedIn blue */
+}
+
 
 /* Footer Styling */
 .footer {

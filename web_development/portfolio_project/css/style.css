@@ -646,10 +646,10 @@ pre {
   color: #cccccc; /* Subtle text color */
   line-height: 1.6;
 }
-/* skills  */
+ /*skills  */
 
 .slider{
-  height: 25px;
+  /* height: 25px; */
   margin: auto;
   position: relative;
   width: 2%;
@@ -665,7 +665,7 @@ pre {
 .slider-track:hover{
   animation-play-state: paused;
 }
-/* enable scroll  */ 
+/* enable scroll  */
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -681,6 +681,14 @@ pre {
   align-items: center;
   padding: 15px;
   perspective: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+  box-shadow: 0px 4px 10px rgba(219, 19, 19, 0.5); 
 
 }
 img {
@@ -717,6 +725,15 @@ img:hover{
 /* Container and Heading */
 
 /* Contact Container */
+/* .container {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 20px;
+  background-color: #f9f9f9;
+} */
+
+
+
 .contact-container {
   display: flex;
   /* flex-wrap: wrap; */

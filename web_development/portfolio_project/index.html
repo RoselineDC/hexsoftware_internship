@@ -362,39 +362,40 @@
             <div class="contact-form">
                 <h3>Get In Touch with Me</h3>
                 <div class="form-data">
-                    <form>
+                    <form id="contactForm">
                         <!-- Full Name and Phone in One Row -->
                         <div class="form-flex">
                             <div class="form-group">
                                 <label for="name">Full Name</label>
-                                <input type="text" id="name" placeholder="Full Name">
+                                <input type="text" id="name" name="fullName" placeholder="Full Name">
                             </div>
                             <div class="form-group">
                                 <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" placeholder="Phone Number">
+                                <input type="tel" id="phone" name="phoneNumber" placeholder="Phone Number">
                             </div>
                         </div>
 
                         <!-- Email Address -->
                         <div class="form-group">
                             <label for="email">Email Address</label>
-                            <input type="email" id="email" placeholder="Email Address">
+                            <input type="email" id="email" name="email" placeholder="Email Address">
                         </div>
 
                         <!-- Subject -->
                         <div class="form-group">
                             <label for="sub">Subject</label>
-                            <input type="text" id="sub" placeholder="Subject">
+                            <input type="text" id="sub" name="subject" placeholder="Subject">
                         </div>
 
                         <!-- Message -->
                         <div class="form-group">
                             <label for="msg">Message</label>
-                            <textarea id="msg" placeholder="Write your message here"></textarea>
+                            <textarea id="msg" name="message" placeholder="Write your message here"></textarea>
                         </div>
+                        <button type="submit" class="sub-butn"  id="submitButton">SUBMIT</button>
                     </form>
                     <!-- button -->
-                     <button class="sub-butn">SUBMIT</button>
+                    
                 </div>
             </div>
             <div class="contact-address">

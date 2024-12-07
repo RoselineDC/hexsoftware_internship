@@ -988,7 +988,7 @@ textarea {
   border-bottom-color: rgb(75 85 99 / var(--tw-border-opacity));
   border-bottom-width: 1px;
   border-radius: 0.5rem;
-
+  background-color: transparent;
   height: 3rem;
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -997,6 +997,19 @@ textarea {
   transition-duration: 0.3s;
   width: 100%;
 }
+#submitButton {
+  /* background-color: lightgray; /* Initial background color *
+  color: black;
+  border: 1px solid gray; */
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#submitButton:active {
+  background-color: rgb(21, 17, 17); 
+  border: red;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

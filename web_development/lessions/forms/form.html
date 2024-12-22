@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <!-- <link rel="stylesheet" href="form.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="./public/form.css"> -->
+    <link rel="stylesheet" type="text/css" href="/form.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-header">
+                <h1>Sign Up</h1>
+            </div>
+            <div class="form-body">
+                <form  id="userForm" action="" mathod="post">
+                    <div class="form-group">
+                        <div class="form-input">
+                            <label for="first-name">First Name</label>
+                            <input type="text" name="first-name" id="name" placeholder="Enter your first name" autofill="ÿes">
+                        </div>
+                        <duv class="form-input">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" name="last-name" id="last-name" placeholder="Enter your last name" required>
+                        </duv>
+                        <div class="form-input">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-input">
+
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" placeholder="Enter your password" required>
+                        </div>
+                        <div class="form-input">
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" name="confirm-password" id="confirm-password"
+                                placeholder="Enter your confirm password" required>
+                        </div>
+                        <div class="form-input">
+                            <label for="phone">Phone</label>
+                            <input type="tel" name="phone" id="phone" placeholder="Enter your phone" required>
+                        </div>
+                        <!-- submit button -->
+                        <div class="form-input">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </div>
+                    <div class="form-footer">
+                        <p>Already have an account? <a href="#">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- js -->
+     <script src="./form.js"></script>
+     <!-- <script src="/form.js"></script> -->
+</body>
+
+</html>
